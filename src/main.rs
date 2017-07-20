@@ -45,7 +45,8 @@ fn main() {
 
     event_queue.sync_roundtrip().unwrap();
 
-    let env = event_queue.state().get_handler::<EnvHandler<WaylandEnv>>(env_id);
+    let state = event_queue.state();
+    let env = state.get_handler::<EnvHandler<WaylandEnv>>(env_id);
 
     let gc_id = event_queue.add_handler(GammaControlHandler::new());
     event_queue.register::<_, GammaControlHandler>(&env.gamma_control, gc_id);
