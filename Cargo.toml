@@ -1,0 +1,13 @@
+[package]
+name = "nightshift"
+version = "0.1.0"
+authors = ["Marvin Beckers <mail@embik.me>"]
+build = "build.rs"
+
+[dependencies]
+wayland-client = "0.9.7"
+wayland-sys = "0.9.7"
+wayland-scanner = "0.9.7"
+
+[build-dependencies]
+wayland-scanner = "0.9.7"
