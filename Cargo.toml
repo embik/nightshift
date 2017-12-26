@@ -5,9 +5,9 @@ authors = ["Marvin Beckers <mail@embik.me>"]
 build = "build.rs"
 
 [dependencies]
-wayland-client = "0.9.7"
-wayland-sys = "0.9.7"
-wayland-scanner = "0.9.7"
+wayland-client = "0.12.4"
+wayland-sys = "0.12.4"
+wayland-scanner = "0.12.4"
 
 [build-dependencies]
-wayland-scanner = "0.9.7"
+wayland-scanner = "0.12.4"

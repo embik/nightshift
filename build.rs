@@ -15,12 +15,12 @@ fn main() {
 
     generate_code(
         gamma_control_file,
-        out_dir.join("gamma_control.rs"),
+        out_dir.join("gamma_control_api.rs"),
         Side::Client
     );
 
     generate_interfaces(
         gamma_control_file,
-        out_dir.join("gamma_control_interfaces.rs")
+        out_dir.join("gamma_control_interface.rs")
     );
 }
